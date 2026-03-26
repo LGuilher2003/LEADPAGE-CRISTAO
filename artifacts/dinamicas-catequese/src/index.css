@@ -359,6 +359,16 @@ section {
   flex-shrink: 0;
 }
 
+.avatar-photo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  flex-shrink: 0;
+  border: 2px solid var(--border);
+}
+
 .author-info strong {
   font-size: 0.88rem;
   font-weight: 600;

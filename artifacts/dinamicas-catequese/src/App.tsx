@@ -7,42 +7,42 @@ const testimonials = [
     text: "Eu passava horas toda semana procurando atividades na internet. Agora tenho tudo pronto e organizado. Meus encontros ficaram muito mais dinâmicos e as crianças adoram!",
     name: "Maria Aparecida",
     role: "Catequista há 8 anos",
-    initial: "M"
+    photo: "/avatar-maria.png"
   },
   {
     stars: 5,
     text: "Recomendo para toda a nossa equipe de catequistas. O material é muito bem estruturado e facilita demais a organização dos encontros. Valeu cada centavo.",
     name: "Irmã Conceição",
     role: "Coordenadora de Catequese",
-    initial: "I"
+    photo: "/avatar-irma.png"
   },
   {
     stars: 5,
     text: "Comecei a catequizar este ano e não tinha experiência. Esse material me deu segurança para conduzir os encontros. As crianças ficam muito mais participativas.",
     name: "Fernanda Oliveira",
     role: "Catequista voluntária",
-    initial: "F"
+    photo: "/avatar-fernanda.png"
   },
   {
     stars: 5,
     text: "Um material sério, respeitoso e alinhado com a fé católica. Faz diferença ter recursos assim disponíveis para nossas comunidades.",
     name: "Pe. Ricardo Santos",
     role: "Pároco e formador",
-    initial: "R"
+    photo: "/avatar-padre.png"
   },
   {
     stars: 5,
     text: "Depois de tantos anos catequizando, achei que já tinha visto tudo. Esse material me surpreendeu com ideias novas e criativas. Renovou meu ânimo!",
     name: "Dona Tereza",
     role: "Catequista há 15 anos",
-    initial: "T"
+    photo: "/avatar-tereza.png"
   },
   {
     stars: 5,
     text: "O valor é muito acessível pelo tanto que se recebe. As dinâmicas são práticas e fáceis de adaptar. Super recomendo para qualquer catequista.",
     name: "Lucas Mendes",
     role: "Catequista e seminarista",
-    initial: "L"
+    photo: "/avatar-lucas.png"
   }
 ];
 
@@ -227,7 +227,7 @@ export default function App() {
                 <div className="stars">{"★".repeat(t.stars)}</div>
                 <p className="testimonial-text">"{t.text}"</p>
                 <div className="testimonial-author">
-                  <div className="avatar">{t.initial}</div>
+                  <img src={t.photo} alt={t.name} className="avatar-photo" />
                   <div className="author-info">
                     <strong>{t.name}</strong>
                     <span>{t.role}</span>
