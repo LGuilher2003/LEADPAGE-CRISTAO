@@ -99,10 +99,10 @@ function Popup({ onClose }: { onClose: () => void }) {
           <div className="popup-feature">100 Dinâmicas Grupo</div>
           <div className="popup-feature">Garantia de 30 dias</div>
         </div>
-        <button className="btn-popup">🔒 RESGATAR OFERTA</button>
-        <button className="popup-skip" onClick={onClose}>
+        <a href="https://pay.wiapy.com/D_L1NwzSgA" className="btn-popup" style={{ display: 'block', textAlign: 'center', textDecoration: 'none', boxSizing: 'border-box' }}>🔒 RESGATAR OFERTA</a>
+        <a href="https://pay.wiapy.com/9A8E3SWaOL" className="popup-skip" style={{ display: 'block', textAlign: 'center', textDecoration: 'none', boxSizing: 'border-box' }}>
           Não, quero manter o Pacote Básico
-        </button>
+        </a>
       </div>
     </div>
   );
@@ -303,9 +303,9 @@ export default function App() {
                 <li>Acesso imediato por e-mail</li>
                 <li>Garantia estendida de 30 dias</li>
               </ul>
-              <button className="btn-featured">
+              <a href="https://pay.wiapy.com/3S6ze9kca3" className="btn-featured" style={{ display: 'block', textAlign: 'center', textDecoration: 'none', boxSizing: 'border-box' }}>
                 QUERO A VERSÃO COMPLETA
-              </button>
+              </a>
             </div>
           </div>
         </div>
